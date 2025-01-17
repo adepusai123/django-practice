@@ -1,0 +1,32 @@
+<!-- below line provides access to static files -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>EMS</title>
+</head>
+<body>
+    <h1>Update Skill Set</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="skills">Skills:</label><br>
+        <input type="checkbox" id="web_dev" name="skills" value="Web development">
+        <label for="web_dev">Web development</label><br>
+        <input type="checkbox" id="ml" name="skills" value="Machine Learning">
+        <label for="ml">Machine Learning</label><br>
+        <input type="checkbox" id="ds" name="skills" value="Data Science">
+        <label for="ds">Data Science</label><br>
+        <input type="checkbox" id="ip" name="skills" value="Image processing">
+        <label for="ip">Image processing</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
