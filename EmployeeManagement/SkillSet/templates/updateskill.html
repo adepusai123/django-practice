@@ -1,0 +1,45 @@
+<!-- below line provides access to static files -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>EMS</title>
+</head>
+<body class="body-class"></body>
+    <h1 class="header-class">Update Skill Set</h1>
+    <form action="" method="post"></form>
+        <!-- {% csrf_token %} -->
+        <div class="form-group">
+            <input type="email" id="email" name="email" class="input-class email" placeholder="Email" required>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="skills" class="label-class">Skills:</label><br>
+            <div class="checkbox-group">
+                <input type="checkbox" id="web_dev" name="skills" value="Web development" class="checkbox-class">
+                <label for="web_dev" class="label-class">Web development</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="ml" name="skills" value="Machine Learning" class="checkbox-class">
+                <label for="ml" class="label-class">Machine Learning</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="ds" name="skills" value="Data Science" class="checkbox-class">
+                <label for="ds" class="label-class">Data Science</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="ip" name="skills" value="Image processing" class="checkbox-class">
+                <label for="ip" class="label-class">Image processing</label>
+            </div>
+        </div>
+        <br>
+
+        <button type="submit" class="button-class">Submit</button>
+    </form>
+</body>
+</html>

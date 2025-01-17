@@ -1,0 +1,59 @@
+/* main.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 25%;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.header-class {
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
+.label-class {
+    /* display: block; */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.email{
+    width: 100%;
+}
+.input-class, .checkbox-class {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-class {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-class:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    /* .form-class {
+        padding: 10px;
+    }
+
+    .input-class, .checkbox-class {
+        padding: 8px;
+    }
+
+    .button-class {
+        padding: 8px;
+    } */
+}
