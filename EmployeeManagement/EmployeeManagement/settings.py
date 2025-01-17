@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'SkillSet.apps.SkillsetConfig', # <application_name>.apps.<class_name>
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
