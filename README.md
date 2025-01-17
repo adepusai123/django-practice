@@ -26,3 +26,14 @@ To create independent modules of project
 
 ex: `` python manage.py startapp SkillSet``
 
+
+Create template & static files in app
+add chanages in urls.py as well as settings.py
+
+Create models in models.py 
+
+now run `` python manage.py makemigrations`` on root folder EMS
+
+it result success respnse then
+``python manage.py migrate`` to perform operations on db
+
